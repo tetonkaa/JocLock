@@ -16,7 +16,7 @@
     "jsx": "react"
   },
   "include": [
-    "**/*"
+    "file.ts"
   ],
   "exclude": [
     "node_modules",
