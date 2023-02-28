@@ -9,17 +9,21 @@ const Posts = {
   },
   fields: [
     {
-      name: 'title',
+      name: 'ProductName',
       type: 'text',
     },
     {
-      name: 'author',
+      name: 'createdBy',
       type: 'relationship',
       relationTo: 'users',
     },
     {
-      name: 'publishedDate',
-      type: 'date',
+      name: 'productImageLink',
+      type: 'text',
+    },
+    {
+      name: 'price',
+      type: 'text',
     },
     {
       name: 'category',
@@ -27,14 +31,8 @@ const Posts = {
       relationTo: 'categories'
     },
     {
-      name: 'tags',
-      type: 'relationship',
-      relationTo: 'tags',
-      hasMany: true,
-    },
-    {
-      name: 'content',
-      type: 'richText'
+      name: 'ProductDescription',
+      type: 'text' ,
     },
     {
       name: 'status',
