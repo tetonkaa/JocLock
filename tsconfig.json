@@ -15,15 +15,16 @@
     "rootDir": "./",
     "jsx": "react"
   },
-  "include": [
-    "file.ts"
-  ],
+  // "include": [
+  //   "file.ts"
+  // ],
   "exclude": [
     "node_modules",
     "dist",
     "build",
   ],
   "ts-node": {
-    "swc": true
+    "swc": true,
+    "transpileOnly": true
   }
 }
