@@ -1,7 +1,7 @@
 const Posts = {
   slug: 'posts',
   admin: {
-    defaultColumns: ['title', 'author', 'category', 'tags', 'status'],
+    defaultColumns: ['title', 'author', 'category', 'status'],
     useAsTitle: 'title',
   },
   access: {
@@ -28,7 +28,8 @@ const Posts = {
     {
       name: 'category',
       type: 'relationship',
-      relationTo: 'categories'
+      relationTo: 'categories',
+      hasMany: true,
     },
     {
       name: 'ProductDescription',
